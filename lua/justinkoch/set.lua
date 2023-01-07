@@ -9,8 +9,9 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
-vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes"
+vim.opt.cursorline = true
+vim.opt.wrap = false
 
 vim.opt.cmdheight = 2
 
