@@ -5,6 +5,8 @@ fn main() {
     println!("Hello, Word");
     let input: String = fs::read_to_string("test.test");
 
+    input.
+
     println!("{}", input);
 
     println!("Hi");
