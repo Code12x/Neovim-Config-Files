@@ -15,7 +15,7 @@ vim.opt.wrap = false
 
 vim.opt.cmdheight = 2
 
-vim.opt.updatetime = 25
+vim.opt.updatetime = 50
 
 vim.opt.smartindent = true
 
@@ -29,6 +29,3 @@ vim.opt.undofile = true
 
 vim.opt.termguicolors = true
 
-vim.opt.isfname:append("@-@")
-
-vim.keymap.set("n", "<C-->", "")
