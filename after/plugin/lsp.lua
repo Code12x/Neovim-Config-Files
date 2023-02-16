@@ -1,19 +1,8 @@
+require("luasnip.loaders.from_vscode").lazy_load({ paths = { "./custom-snippets/" } })
+
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
-
-lsp.ensure_installed ({
-    'sumneko_lua',
-    'rust_analyzer',
-    'html',
-    'cssls',
-    'jsonls',
-    'jdtls',
-    'quick_lint_js',
-    'intelephense',
-    'pyright',
-    'gradle_ls'
-})
 
 local cmp = require("cmp")
 

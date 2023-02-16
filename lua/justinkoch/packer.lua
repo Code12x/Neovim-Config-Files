@@ -1,5 +1,3 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
@@ -22,7 +20,6 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     use 'andweeb/presence.nvim'
-    use 'Raimondi/delimitMate'
     use 'manzeloth/live-server'
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -38,12 +35,16 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-nvim-lsp'},     -- Required
             {'hrsh7th/cmp-buffer'},       -- Optional
             {'hrsh7th/cmp-path'},         -- Optional
-            {'saadparwaiz1/cmp_luasnip'}, -- Optional
             {'hrsh7th/cmp-nvim-lua'},     -- Optional
 
             -- Snippets
             {'L3MON4D3/LuaSnip'},             -- Required
-            {'rafamadriz/friendly-snippets'}, -- Optional
+            {'rafamadriz/friendly-snippets'},
         }
+    }
+    use 'mattn/emmet-vim'
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
     }
 end)
