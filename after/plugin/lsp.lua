@@ -18,5 +18,3 @@ lsp.setup()
 vim.diagnostic.config({
     virtual_text = true,
 })
-
-require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/custom-snippets" } })

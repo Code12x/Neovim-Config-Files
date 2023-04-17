@@ -42,7 +42,6 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
-    use 'mattn/emmet-vim'
     use {
         "windwp/nvim-autopairs",
         config = function() require("nvim-autopairs").setup {} end
